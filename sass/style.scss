@@ -1,0 +1,46 @@
+@import 'colors';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+}
+
+nav {
+    text-transform: uppercase;
+
+    .logo-lfc {
+        margin-bottom: 7px;
+        margin-right: 10px;
+        width: 30px;
+    }
+
+    a {
+        color: $white-color;
+    }
+
+    a:hover {
+        color: $red-color;
+    }
+
+    .navbar-brand {
+        font-weight: bold; //Pogrubienie napisu głównego
+    }
+
+    .active {
+        color: $red-color; //Jeśli dana sekcja jest aktywna
+    }
+
+    .fa-bars {
+        padding: 10px; //Powiększa burgera
+        color: $white-color;
+    }
+}
