@@ -15,6 +15,7 @@ body {
 
 nav {
   text-transform: uppercase;
+  z-index: 1;
 }
 
 nav .logo-lfc {
@@ -42,5 +43,78 @@ nav .active {
 nav .fa-bars {
   padding: 10px;
   color: white;
+}
+
+header {
+  color: white;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/hero-img-640x426.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+header .hero-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+header .fa-chevron-down {
+  font-size: 30px;
+  color: white;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+header .fa-chevron-down:hover {
+  color: red;
+}
+
+@media (min-width: 375px) {
+  header p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  header p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .hero-img {
+    background-image: url("../img/hero-img-1920x1280.jpg");
+  }
+  header p {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

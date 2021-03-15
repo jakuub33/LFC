@@ -16,6 +16,7 @@ body {
 
 nav {
     text-transform: uppercase;
+    z-index: 1;
 
     .logo-lfc {
         margin-bottom: 7px;
@@ -42,5 +43,75 @@ nav {
     .fa-bars {
         padding: 10px; //Powiększa burgera
         color: $white-color;
+    }
+}
+
+header {
+    color: $white-color;
+
+    .hero-img {
+        position: relative;
+        height: 100vh;
+        background-image: url('../img/hero-img-640x426.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+    }
+
+    .hero-shadow {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: -1;
+    }
+
+    .hero-text {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+    }    
+
+    .fa-chevron-down {
+        font-size: 30px;
+        color: $white-color;
+        transition: color .3s;
+    }
+
+    .fa-chevron-down:hover {
+        color: $red-color;
+    }
+}
+
+@media (min-width: 375px) {
+    header {
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        .hero-img {
+            background-image: url('../img/hero-img-1920x1280.jpg');
+        }
+
+        p {
+            font-size: 1rem;
+        }
     }
 }
