@@ -16,6 +16,7 @@ body {
 
 nav {
     text-transform: uppercase;
+    transition: background-color .8s;
     z-index: 1;
 
     .logo-lfc {
@@ -44,6 +45,10 @@ nav {
         padding: 10px; //Powiększa burgera
         color: $white-color;
     }
+}
+
+.shadow-bg {
+    background-color: rgba(0, 0, 0, .8);
 }
 
 header {
