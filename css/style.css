@@ -7,10 +7,43 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 73.5px;
+}
+
 body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
+  color: white;
   background-color: #333;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto;
+  height: 3px;
+  width: 60px;
+  background-color: red;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scale-hover {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.scale-hover:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 nav {
@@ -47,10 +80,6 @@ nav .fa-bars {
   color: white;
 }
 
-.shadow-bg {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 header {
   color: white;
 }
@@ -69,7 +98,7 @@ header .hero-shadow {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
 
@@ -103,6 +132,57 @@ header .fa-chevron-down:hover {
   color: red;
 }
 
+.matches img {
+  margin-top: 20px;
+}
+
+.matches p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.matches i {
+  font-size: 20px;
+}
+
+.matches .win {
+  color: lime;
+}
+
+.matches .draw {
+  color: orange;
+}
+
+.matches .lose {
+  color: red;
+}
+
+.stats .stats-img {
+  position: relative;
+  background-image: url("../img/stats-bg640x426.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.stats .stats-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.stats p {
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.stats i {
+  margin-top: 40px;
+  font-size: 50px;
+}
+
 @media (min-width: 375px) {
   header p {
     font-size: 12px;
@@ -121,6 +201,10 @@ header .fa-chevron-down:hover {
   }
   header p {
     font-size: 1rem;
+  }
+  .stats .stats-img {
+    background-image: url("../img/stats-bg1920x1280.jpg");
+    background-position-y: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */

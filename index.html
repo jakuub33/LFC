@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="#results">Wyniki</a>
+                    <a class="nav-link" href="#matches">Mecze</a>
                     <a class="nav-link" href="#highlights">Highlights</a>
                     <a class="nav-link" href="#shop">Sklep</a>
                     <a class="nav-link" href="#team">Skład</a>
@@ -46,12 +46,98 @@
             <div class="hero-text">
                 <h1>Liverpool FC</h1>
                 <p>Strona internetowa o klubie piłkarskim dla fanów.</p>
-                <a href="#results"><i class="fas fa-chevron-down"></i></a>
+                <a href="#matches"><i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
     </header>
 
-    <div id="results" style="height: 100vh;"></div>
+    <main>
+        <section id="matches" class="matches py-5">
+            <div class="container">
+                <h2>wyniki</h2>
+                <div class="underline"></div>
+
+                <div class="row mt-4 text-center">
+                    <div class="col-sm-4 scale-hover">
+                        <img src="https://tiny.pl/rnlk6" alt="Wolverhampton logo">
+                        <p class="win">Wygrana</p>
+                        <p>1 : 2</p>
+                    </div>
+                    <div class="col-sm-4 scale-hover">
+                        <img src="https://tiny.pl/rnl2d" alt="Chelsea logo">
+                        <p class="lose">Przegrana</p>
+                        <p>0 : 1</p>
+                    </div>
+                    <div class="col-sm-4 scale-hover">
+                        <img src="https://tiny.pl/rnl2j" alt="Mancghaster United logo">
+                        <p class="draw">Remis</p>
+                        <p>1 : 1</p>
+                    </div>
+                </div>
+                <hr>
+                <h2>terminarz</h2>
+                <div class="underline"></div>
+
+                <div class="row mt-4 text-center">
+                    <div class="col-sm-4 scale-hover">
+                        <img src="https://tiny.pl/rn47t" alt="Arsenal logo">
+                        <p>domowy</p>
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="col-sm-4 scale-hover">
+                        <img src="https://tiny.pl/rn47r" alt="Fulham logo">
+                        <p>wyjazdowy</p>
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <div class="col-sm-4 scale-hover">
+                        <img src="https://tiny.pl/rn475" alt="Leeds logo">
+                        <p>domowy</p>
+                        <i class="fas fa-home"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stats-img">
+                <div class="stats-shadow"></div>
+                <div class="container stats-text py-5">
+                    <h2>Statystyki</h2>
+                    <div class="underline"></div>
+
+                    <div class="row text-center">
+                        <div class="col-sm-6 col-md-4 scale-hover">
+                            <i class="far fa-play-circle"></i>
+                            <p>rozegrane mecze : 44</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 scale-hover">
+                            <i class="far fa-check-circle"></i>
+                            <p>zwycięstwa : 23</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 scale-hover">
+                            <i class="fab fa-creative-commons-nd"></i>
+                            <p>Remisy : 10</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 scale-hover">
+                            <i class="far fa-times-circle"></i>
+                            <p>porażki : 11</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 scale-hover">
+                            <i class="far fa-futbol"></i>
+                            <p>Gole : 87</p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 scale-hover">
+                            <i class="far fa-arrow-alt-circle-left"></i>
+                            <p>stracone : 39</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">

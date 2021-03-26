@@ -8,10 +8,39 @@
     padding: 0;
 }
 
+html {
+    scroll-padding-top: 73.5px; //Po przejście na jakąś sekcje nav nie zakrywa treści
+}
+
 body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
+    color: $white-color;
     background-color: #333;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    margin: 0 auto;
+    height: 3px;
+    width: 60px;
+    background-color: $red-color;
+}
+
+.shadow-bg {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.scale-hover {
+    transition: transform .3s;
+}
+
+.scale-hover:hover {
+    transform: scale(1.2);
 }
 
 nav {
@@ -47,10 +76,6 @@ nav {
     }
 }
 
-.shadow-bg {
-    background-color: rgba(0, 0, 0, .8);
-}
-
 header {
     color: $white-color;
 
@@ -68,7 +93,7 @@ header {
         position: absolute;
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgba(0, 0, 0, .6);
         z-index: -1;
     }
 
@@ -80,7 +105,7 @@ header {
         align-items: center;
         text-align: center;
         z-index: 1;
-    }    
+    }
 
     .fa-chevron-down {
         font-size: 30px;
@@ -90,6 +115,62 @@ header {
 
     .fa-chevron-down:hover {
         color: $red-color;
+    }
+}
+
+.matches {
+
+    img {
+        margin-top: 20px;
+    }
+
+    p {
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    .win {
+        color: $green-color;
+    }
+
+    .draw {
+        color: $orange-color;
+    }
+
+    .lose {
+        color: $red-color;
+    }
+}
+
+.stats {
+    .stats-img {
+        position: relative;
+        background-image: url('../img/stats-bg640x426.jpg');
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+    }
+
+    .stats-shadow {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        z-index: -1;
+    }
+
+    p {
+        margin: 20px 0;
+        text-transform: uppercase;
+    }
+
+    i {
+        margin-top: 40px;
+        font-size: 50px;
     }
 }
 
@@ -117,6 +198,13 @@ header {
 
         p {
             font-size: 1rem;
+        }
+    }
+
+    .stats {
+        .stats-img {
+            background-image: url('../img/stats-bg1920x1280.jpg');
+            background-position-y: 30%;
         }
     }
 }
