@@ -8,7 +8,7 @@
 }
 
 html {
-  scroll-padding-top: 73.5px;
+  scroll-padding-top: 82px;
 }
 
 body {
@@ -183,6 +183,18 @@ header .fa-chevron-down:hover {
   font-size: 50px;
 }
 
+.highlights .carousel-item {
+  position: relative;
+}
+
+.highlights .film {
+  height: 500px;
+}
+
+.highlights .card-group {
+  color: black;
+}
+
 @media (min-width: 375px) {
   header p {
     font-size: 12px;
@@ -192,6 +204,12 @@ header .fa-chevron-down:hover {
 @media (min-width: 768px) {
   header p {
     font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    height: 82px;
   }
 }
 

@@ -15,7 +15,8 @@
     <script src="https://kit.fontawesome.com/88cb4f56c5.js" crossorigin="anonymous"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="82">
+    <!-- Data-bs-offset rozwiązuje błąd z przechodzeniem do sekcji przez navbar -->
 
     <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100">
         <div class="container">
@@ -28,7 +29,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="#home">Home</a>
                     <a class="nav-link" href="#matches">Mecze</a>
                     <a class="nav-link" href="#highlights">Highlights</a>
                     <a class="nav-link" href="#shop">Sklep</a>
@@ -40,7 +41,7 @@
         </div>
     </nav>
 
-    <header>
+    <header id="home">
         <div class="hero-img">
             <div class="hero-shadow"></div>
             <div class="hero-text">
@@ -133,10 +134,101 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
+        <section>
+            <div id="highlights" class="highlights">
+                <div class="container py-5">
+                    <h2>highlights</h2>
+                    <div class="underline mb-4"></div>
 
+                    <!-- Card group for smaller breakpoints -->
+                    <div class="card-group d-sm-block d-md-flex d-lg-none">
+                        <div class="card mb-sm-3 me-md-3 border border-sm-1 rounded">
+                            <!-- <img src="..." class="card-img-top" alt="..."> -->
+                            <iframe class="card-img-top" src="https://www.youtube.com/embed/udbAtbQ4aVw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">LFC vs Fulham</h5>
+                                <p class="card-text">First-half goal the difference at Anfield</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card mb-sm-3  me-md-3 border border-sm-1 rounded">
+                            <iframe class="card-img-top" src="https://www.youtube.com/embed/GyqKDBvdV9c"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">LFC vs Chelsea</h5>
+                                <p class="card-text">Reds beaten at Anfield</p>
+                                <p class="card-text"><small class="text-muted">Last updated 5 hours ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card mb-sm-3  me-md-3 border border-sm-1 rounded">
+                            <iframe class="card-img-top" src="https://www.youtube.com/embed/Bg9kBlM5okI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">LFC vs Wolves</h5>
+                                <p class="card-text">Jota wins it at Molineux</p>
+                                <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel for bigger breakpoints -->
+                    <div id="carouselExampleIndicators" class="carousel slide container w-75 d-none d-lg-block"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <iframe class="film d-block w-100" src="https://www.youtube.com/embed/udbAtbQ4aVw"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe class="film d-block w-100" src="https://www.youtube.com/embed/GyqKDBvdV9c"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe class="film d-block w-100" src="https://www.youtube.com/embed/Bg9kBlM5okI"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="height: 100vh;"></div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

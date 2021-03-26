@@ -9,7 +9,8 @@
 }
 
 html {
-    scroll-padding-top: 73.5px; //Po przejście na jakąś sekcje nav nie zakrywa treści
+    // 82px tyle ma Navbar
+    scroll-padding-top: 82px; //Po przejściu na jakąś sekcje nav nie zakrywa treści
 }
 
 body {
@@ -174,6 +175,20 @@ header {
     }
 }
 
+.highlights {
+    .carousel-item {
+        position: relative;
+    }
+
+    .film {
+        height: 500px;
+    }
+
+    .card-group {
+        color: $black-color;
+    }
+}
+
 @media (min-width: 375px) {
     header {
         p {
@@ -187,6 +202,12 @@ header {
         p {
             font-size: 15px;
         }
+    }
+}
+
+@media (min-width: 992px) {
+    nav {
+        height: 82px; //Po przejściu na jakąś sekcje nav nie zakrywa treści
     }
 }
 
