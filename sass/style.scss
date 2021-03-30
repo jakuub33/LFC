@@ -189,10 +189,50 @@ header {
     }
 }
 
+.shop {
+    h3 {
+        text-transform: uppercase;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    .shop-img {
+        position: relative;
+        background-image: url('../img/bg-shop640x426.jpg');
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+    }
+
+    .shop-shadow {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: -1;
+    }
+
+    .item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: $white-color;
+        color: $black-color;
+    }
+}
+
 @media (min-width: 375px) {
     header {
         p {
             font-size: 12px;
+        }
+    }
+
+    .shop {
+        .item-details {
+            transform: scale(0.8);
         }
     }
 }
@@ -203,11 +243,25 @@ header {
             font-size: 15px;
         }
     }
+
+    .shop {
+        img {
+            transform: scale(0.7);
+        }
+    }
 }
 
 @media (min-width: 992px) {
     nav {
         height: 82px; //Po przejściu na jakąś sekcje nav nie zakrywa treści
+    }
+
+    .shop {
+
+        img,
+        .item-details {
+            transform: scale(1);
+        }
     }
 }
 
@@ -226,6 +280,12 @@ header {
         .stats-img {
             background-image: url('../img/stats-bg1920x1280.jpg');
             background-position-y: 30%;
+        }
+    }
+
+    .shop {
+        .shop-img {
+            background-image: url('../img/bg-shop1920x1280.jpg');
         }
     }
 }
