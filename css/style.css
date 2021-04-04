@@ -230,6 +230,46 @@ header .fa-chevron-down:hover {
           justify-content: center;
   background-color: white;
   color: black;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.shop .item:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.team p {
+  margin: 0;
+}
+
+.team .card-group {
+  color: black;
+}
+
+.team .card {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.team .card:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.team .card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.team .card-img-top {
+  -o-object-position: 0 0;
+     object-position: 0 0;
 }
 
 @media (min-width: 375px) {
@@ -239,6 +279,12 @@ header .fa-chevron-down:hover {
   .shop .item-details {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
+  }
+  .team .card-img-top {
+    height: 200px;
+  }
+  .team .card-text {
+    height: 150px;
   }
 }
 
@@ -250,6 +296,10 @@ header .fa-chevron-down:hover {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
+  .team img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media (min-width: 992px) {
@@ -260,6 +310,9 @@ header .fa-chevron-down:hover {
   .shop .item-details {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  .team .card-text {
+    height: 200px;
   }
 }
 

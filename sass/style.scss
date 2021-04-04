@@ -220,6 +220,39 @@ header {
         justify-content: center;
         background-color: $white-color;
         color: $black-color;
+        transition: transform .3s;
+    }
+
+    .item:hover {
+        transform: scale(.96);
+    }
+}
+
+.team {
+    p {
+        margin: 0;
+    }
+
+    .card-group {
+        color: $black-color;
+    }
+
+    .card {
+        transition: transform .3s;
+    }
+
+    .card:hover {
+        transform: scale(.98);
+    }
+
+    .card-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .card-img-top {
+        object-position: 0 0;
     }
 }
 
@@ -233,6 +266,16 @@ header {
     .shop {
         .item-details {
             transform: scale(0.8);
+        }
+    }
+
+    .team {
+        .card-img-top {
+            height: 200px;
+        }
+
+        .card-text {
+            height: 150px;
         }
     }
 }
@@ -249,6 +292,12 @@ header {
             transform: scale(0.7);
         }
     }
+
+    .team {
+        img {
+            object-fit: cover; //Teraz zdjęcia dziwnie nie rozciągają się
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -261,6 +310,12 @@ header {
         img,
         .item-details {
             transform: scale(1);
+        }
+    }
+
+    .team {
+        .card-text {
+            height: 200px;
         }
     }
 }
