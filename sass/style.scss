@@ -256,6 +256,79 @@ header {
     }
 }
 
+.trophies {
+
+    p {
+        margin-top: 20px;
+    }
+
+    .trophies-bg {
+        position: relative;
+        background-image: url('../img/trophies-bg640x426.jpg');
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+    }
+
+    .bg-shadow {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        z-index: -1;
+    }
+}
+
+.contact {
+
+    .contact-bg {
+        position: relative;
+        background-image: url('../img/contact-bg640x426.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        z-index: 0;
+    }
+
+    .shadow-bg {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: -1;
+    }
+
+    a {
+        padding-right: 10px;
+        text-decoration: none;
+        color: $white-color;
+        transition: color .3s;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .icons a {
+        padding: 0 5px;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        transition: color .3s;
+    }
+
+    .icons a:hover,
+    a:hover {
+        color: $red-color;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+}
+
 @media (min-width: 375px) {
     header {
         p {
@@ -341,6 +414,18 @@ header {
     .shop {
         .shop-img {
             background-image: url('../img/bg-shop1920x1280.jpg');
+        }
+    }
+
+    .trophies {
+        .trophies-bg {
+            background-image: url('../img/trophies-bg1920x1280.jpg');
+        }
+    }
+
+    .contact {
+        .contact-bg {
+            background-image: url('../img/contact-bg1920x1280.jpg');
         }
     }
 }

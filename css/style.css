@@ -272,6 +272,75 @@ header .fa-chevron-down:hover {
      object-position: 0 0;
 }
 
+.trophies p {
+  margin-top: 20px;
+}
+
+.trophies .trophies-bg {
+  position: relative;
+  background-image: url("../img/trophies-bg640x426.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.trophies .bg-shadow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.contact .contact-bg {
+  position: relative;
+  background-image: url("../img/contact-bg640x426.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.contact .shadow-bg {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.contact a {
+  padding-right: 10px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact .icons a {
+  padding: 0 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.contact .icons a:hover,
+.contact a:hover {
+  color: red;
+}
+
+.contact .info {
+  font-size: 16px;
+}
+
 @media (min-width: 375px) {
   header p {
     font-size: 12px;
@@ -329,6 +398,12 @@ header .fa-chevron-down:hover {
   }
   .shop .shop-img {
     background-image: url("../img/bg-shop1920x1280.jpg");
+  }
+  .trophies .trophies-bg {
+    background-image: url("../img/trophies-bg1920x1280.jpg");
+  }
+  .contact .contact-bg {
+    background-image: url("../img/contact-bg1920x1280.jpg");
   }
 }
 /*# sourceMappingURL=style.css.map */
