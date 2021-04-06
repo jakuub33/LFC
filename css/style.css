@@ -156,18 +156,6 @@ h2 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.scale-hover {
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
-}
-
-.scale-hover:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 nav {
   text-transform: uppercase;
   -webkit-transition: background-color .8s;
@@ -206,7 +194,7 @@ header {
   color: white;
 }
 
-header .hero-img {
+header .header-img {
   position: relative;
   height: 100vh;
   background-image: url("../img/hero-img-640x426.jpg");
@@ -216,7 +204,7 @@ header .hero-img {
   z-index: 0;
 }
 
-header .hero-shadow {
+header .header-shadow {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -224,7 +212,7 @@ header .hero-shadow {
   z-index: -1;
 }
 
-header .hero-text {
+header .header-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,15 +340,6 @@ header .fa-chevron-down:hover {
           justify-content: center;
   background-color: white;
   color: black;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
-}
-
-.shop .item:hover {
-  -webkit-transform: scale(0.96);
-          transform: scale(0.96);
 }
 
 .team p {

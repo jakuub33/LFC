@@ -26,6 +26,7 @@ h2 {
     text-transform: uppercase;
 }
 
+//Podkreślenie każdej h2
 .underline {
     margin: 0 auto;
     height: 3px;
@@ -35,14 +36,6 @@ h2 {
 
 .shadow-bg {
     background-color: rgba(0, 0, 0, .8);
-}
-
-.scale-hover {
-    transition: transform .3s;
-}
-
-.scale-hover:hover {
-    transform: scale(1.2);
 }
 
 nav {
@@ -81,7 +74,7 @@ nav {
 header {
     color: $white-color;
 
-    .hero-img {
+    .header-img {
         position: relative;
         height: 100vh;
         background-image: url('../img/hero-img-640x426.jpg');
@@ -91,7 +84,7 @@ header {
         z-index: 0;
     }
 
-    .hero-shadow {
+    .header-shadow {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -99,7 +92,7 @@ header {
         z-index: -1;
     }
 
-    .hero-text {
+    .header-text {
         display: flex;
         height: 100%;
         flex-direction: column;
@@ -135,6 +128,7 @@ header {
         font-size: 20px;
     }
 
+    //Kolory odpowiednie dla wyniku meczu
     .win {
         color: $green-color;
     }
@@ -221,11 +215,6 @@ header {
         justify-content: center;
         background-color: $white-color;
         color: $black-color;
-        transition: transform .3s;
-    }
-
-    .item:hover {
-        transform: scale(.96);
     }
 }
 
@@ -238,6 +227,7 @@ header {
         color: $black-color;
     }
 
+    //Lekki scale po najechaniu
     .card {
         transition: transform .3s;
     }
@@ -252,6 +242,7 @@ header {
         font-weight: bold;
     }
 
+    //Nadanie pozycji zdjęcia karty od góry
     .card-img-top {
         object-position: 0 0;
     }
@@ -301,6 +292,7 @@ header {
         z-index: -1;
     }
 
+    //Formatowanie linków z kotwicami
     a {
         padding-right: 10px;
         text-decoration: none;
@@ -312,6 +304,7 @@ header {
         margin: 0;
     }
 
+    //Formatowanie wyglądu ikon społecznościowych
     .icons a {
         padding: 0 5px;
         text-decoration: none;
@@ -325,6 +318,7 @@ header {
         color: $red-color;
     }
 
+    //Dane adresowe
     .info {
         font-size: 16px;
     }
@@ -338,12 +332,16 @@ header {
     }
 
     .shop {
+
+        //Pomniejszenie na mniejszych ekranach zdjęcia koszulek
         .item-details {
             transform: scale(0.8);
         }
     }
 
     .team {
+
+        //Pomniejszenie na mniejszych ekranach wysokości zdjęcia i tekstu karty
         .card-img-top {
             height: 200px;
         }
@@ -381,6 +379,7 @@ header {
 
     .shop {
 
+        //Wrócenie do normalnego rozmiaru na większych ekranach
         img,
         .item-details {
             transform: scale(1);
@@ -405,6 +404,7 @@ header {
         }
     }
 
+    //Zmiana rozdzielczości tła danej sekcji na większych ekranach
     .stats {
         .stats-img {
             background-image: url('../img/stats-bg1920x1280.jpg');

@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/88cb4f56c5.js" crossorigin="anonymous"></script>
 </head>
@@ -32,6 +33,7 @@
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link active" href="#home">Home</a>
                     <a class="nav-link" href="#matches">Mecze</a>
+                    <a class="nav-link" href="#stats">Statystyki</a>
                     <a class="nav-link" href="#highlights">Highlights</a>
                     <a class="nav-link" href="#shop">Sklep</a>
                     <a class="nav-link" href="#team">Skład</a>
@@ -43,11 +45,12 @@
     </nav>
 
     <header id="home">
-        <div class="hero-img">
-            <div class="hero-shadow"></div>
-            <div class="hero-text">
-                <h1>Liverpool FC</h1>
-                <p>Strona internetowa o klubie piłkarskim dla fanów.</p>
+        <div class="header-img">
+            <div class="header-shadow"></div>
+            <div class="header-text">
+                <h1 data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">Liverpool FC</h1>
+                <p data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">Strona internetowa o klubie piłkarskim
+                    dla fanów.</p>
                 <a href="#matches"><i class="fas fa-chevron-down bounce-top"></i></a>
             </div>
         </div>
@@ -60,17 +63,17 @@
                 <div class="underline"></div>
 
                 <div class="row mt-4 text-center">
-                    <div class="col-sm-4 scale-hover">
+                    <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="100">
                         <img src="https://tiny.pl/rnlk6" alt="Wolverhampton logo">
                         <p class="win">Wygrana</p>
                         <p>1 : 2</p>
                     </div>
-                    <div class="col-sm-4 scale-hover">
+                    <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="200">
                         <img src="https://tiny.pl/rnl2d" alt="Chelsea logo">
                         <p class="lose">Przegrana</p>
                         <p>0 : 1</p>
                     </div>
-                    <div class="col-sm-4 scale-hover">
+                    <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="300">
                         <img src="https://tiny.pl/rnl2j" alt="Mancghaster United logo">
                         <p class="draw">Remis</p>
                         <p>1 : 1</p>
@@ -81,17 +84,17 @@
                 <div class="underline"></div>
 
                 <div class="row mt-4 text-center">
-                    <div class="col-sm-4 scale-hover">
+                    <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="100">
                         <img src="https://tiny.pl/rn47t" alt="Arsenal logo">
                         <p>domowy</p>
                         <i class="fas fa-home"></i>
                     </div>
-                    <div class="col-sm-4 scale-hover">
+                    <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="200">
                         <img src="https://tiny.pl/rn47r" alt="Fulham logo">
                         <p>wyjazdowy</p>
                         <i class="fas fa-bus"></i>
                     </div>
-                    <div class="col-sm-4 scale-hover">
+                    <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="300">
                         <img src="https://tiny.pl/rn475" alt="Leeds logo">
                         <p>domowy</p>
                         <i class="fas fa-home"></i>
@@ -100,7 +103,7 @@
             </div>
         </section>
 
-        <section class="stats">
+        <section id="stats" class="stats">
             <div class="stats-img">
                 <div class="stats-shadow"></div>
                 <div class="container stats-text py-5">
@@ -108,27 +111,27 @@
                     <div class="underline"></div>
 
                     <div class="row text-center">
-                        <div class="col-sm-6 col-md-4 scale-hover">
+                        <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
                             <i class="far fa-play-circle"></i>
                             <p>rozegrane mecze : 44</p>
                         </div>
-                        <div class="col-sm-6 col-md-4 scale-hover">
+                        <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
                             <i class="far fa-check-circle"></i>
                             <p>zwycięstwa : 23</p>
                         </div>
-                        <div class="col-sm-6 col-md-4 scale-hover">
+                        <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="300">
                             <i class="fab fa-creative-commons-nd"></i>
                             <p>Remisy : 10</p>
                         </div>
-                        <div class="col-sm-6 col-md-4 scale-hover">
+                        <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="400">
                             <i class="far fa-times-circle"></i>
                             <p>porażki : 11</p>
                         </div>
-                        <div class="col-sm-6 col-md-4 scale-hover">
+                        <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="500">
                             <i class="far fa-futbol"></i>
                             <p>Gole : 87</p>
                         </div>
-                        <div class="col-sm-6 col-md-4 scale-hover">
+                        <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="600">
                             <i class="far fa-arrow-alt-circle-left"></i>
                             <p>stracone : 39</p>
                         </div>
@@ -240,7 +243,7 @@
                         <div class="underline mb-4"></div>
 
                         <div class="row text-center">
-                            <div class="col-sm-6 col-md-3">
+                            <div class="col-sm-6 col-md-3" data-aos="flip-left" data-aos-delay="200">
                                 <h3>domowy</h3>
                                 <hr>
                                 <div class="item d-block d-sm-flex">
@@ -253,7 +256,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-3">
+                            <div class="col-sm-6 col-md-3" data-aos="flip-left" data-aos-delay="300">
                                 <h3>wyjazdowy</h3>
                                 <hr>
                                 <div class="item d-block d-sm-flex">
@@ -266,7 +269,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-3">
+                            <div class="col-sm-6 col-md-3" data-aos="flip-left" data-aos-delay="400">
                                 <h3>trzeci</h3>
                                 <hr>
                                 <div class="item d-block d-sm-flex">
@@ -279,7 +282,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-3">
+                            <div class="col-sm-6 col-md-3" data-aos="flip-left" data-aos-delay="500">
                                 <h3>bramkarski</h3>
                                 <hr>
                                 <div class="item d-block d-sm-flex">
@@ -427,34 +430,32 @@
                         <div class="underline"></div>
 
                         <div class="row mt-4 text-center justify-content-center align-items-end">
-                            <div class="trophy col-12 col-sm-3">
-                                <img class="scale-hover" src="img/trophies/premier-league.png"
-                                    alt="Puchar Ligi Angielskiej">
+                            <div class="trophy col-12 col-sm-3" data-aos="zoom-in" data-aos-delay="200">
+                                <img src="img/trophies/premier-league.png" alt="Puchar Ligi Angielskiej">
                                 <p>Mistrzostwo Anglii</p>
                             </div>
-                            <div class="trophy col-12 col-sm-3">
-                                <img class="scale-hover" src="img/trophies/champions-league.png" alt="Puchar Europy">
+                            <div class="trophy col-12 col-sm-3" data-aos="zoom-in" data-aos-delay="300">
+                                <img src="img/trophies/champions-league.png" alt="Puchar Europy">
                                 <p>Puchar Europy</p>
                             </div>
-                            <div class="trophy col-12 col-sm-3">
-                                <img class="scale-hover" src="img/trophies/fa-cup.png" alt="Puchar Anglii">
+                            <div class="trophy col-12 col-sm-3" data-aos="zoom-in" data-aos-delay="400">
+                                <img src="img/trophies/fa-cup.png" alt="Puchar Anglii">
                                 <p>Puchar Anglii</p>
                             </div>
-                            <div class="trophy col-12 col-sm-3">
-                                <img class="scale-hover" src="img/trophies/league-cup.png" alt="Puchar Ligi">
+                            <div class="trophy col-12 col-sm-3" data-aos="zoom-in" data-aos-delay="500">
+                                <img src="img/trophies/league-cup.png" alt="Puchar Ligi">
                                 <p>Puchar Ligi</p>
                             </div>
-                            <div class="trophy col-12 col-sm-3">
-                                <img class="scale-hover" src="img/trophies/uefa-cup.png" alt="Puchar UEFA">
+                            <div class="trophy col-12 col-sm-3" data-aos="zoom-in" data-aos-delay="600">
+                                <img src="img/trophies/uefa-cup.png" alt="Puchar UEFA">
                                 <p>Puchar UEFA</p>
                             </div>
-                            <div class="trophy col-12 col-sm-3">
-                                <img class="scale-hover" src="img/trophies/supercup-eu.png" alt="Superpuchar Europy">
+                            <div class="trophy col-12 col-sm-3" data-aos="zoom-in" data-aos-delay="700">
+                                <img src="img/trophies/supercup-eu.png" alt="Superpuchar Europy">
                                 <p>Superpuchar Europy</p>
                             </div>
-                            <div class="trophy col-12 col-sm-3">
-                                <img class="scale-hover" src="img/trophies/club-world-cup.png"
-                                    alt="Puchar Klubowych MŚ">
+                            <div class="trophy col-12 col-sm-3" data-aos="zoom-in" data-aos-delay="800">
+                                <img src="img/trophies/club-world-cup.png" alt="Puchar Klubowych MŚ">
                                 <p>Klubowe Mistrzostwo Świata</p>
                             </div>
                         </div>
@@ -464,10 +465,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section>
-            
-        </section> -->
     </main>
 
     <footer>
@@ -481,6 +478,7 @@
                         <div class="col-sm-12 col-md-6">
                             <a href="#home">Home</a>
                             <a href="#matches">Mecze</a>
+                            <a href="#stats">Statystyki</a>
                             <a href="#highlights">Highlights</a>
                             <a href="#shop">Sklep</a>
                             <a href="#team">Skład</a>
@@ -522,12 +520,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
-    <!-- Slick ----------------------------- -->
+    <!-- Slick ------------------------------->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/slick-setting.js"></script>
-    <!-- ----------------------------------- -->
+    <!-- AOS --------------------------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos-settings.js"></script>
+    <!-- ------------------------------------->
     <script src="js/script.js"></script>
 </body>
 
