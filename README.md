@@ -6,3 +6,5 @@
 
 > Widok mobilny, menu hamburgerowe:
 <img src="https://github.com/jakuub33/LFC/blob/main/view/mobile.jpg">
+
+[Sprawdź sam!](https://jakuub33.github.io/LFC/)
